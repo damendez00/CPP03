@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:26:49 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/16 14:26:49 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/16 13:38:33 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ ClapTrap&   ClapTrap::operator=( const ClapTrap& rhs ) {
 }
 
 void    ClapTrap::takeDamage( unsigned int amount ) {
-    if (amount < 0) {
+    if ((int)amount < 0) {
         std::cout << "Amount must be positive" << std::endl;
 		return ;
-    } else if (this->_hitPoints <= 0) {
+    } else if ((int)this->_hitPoints <= 0) {
         std::cout << "ClapTrap " << this->_name << " is dead and can't take more damage" << std::endl;
         return ;
     }
@@ -50,10 +50,10 @@ void    ClapTrap::takeDamage( unsigned int amount ) {
 }
 
 void    ClapTrap::attack( const std::string& target ) {
-    if (this->_energyPoints <= 0) {
+    if ((int)this->_energyPoints <= 0) {
         std::cout << "ClapTrap " << this->_name << " is out of energy points!" << std::endl;
         return ;
-    } else if (this->_hitPoints <= 0) {
+    } else if ((int)this->_hitPoints <= 0) {
         std::cout << "ClapTrap " << this->_name << " is dead and can't take more damage" << std::endl;
         return ;
     }
@@ -62,13 +62,13 @@ void    ClapTrap::attack( const std::string& target ) {
 }
 
 void    ClapTrap::beRepaired( unsigned int amount ) {
-    if (amount < 0) {
+    if ((int)amount < 0) {
         std::cout << "Amount must be positive" << std::endl;
 		return ;
-    } else if (this->_energyPoints <= 0) {
+    } else if ((int)this->_energyPoints <= 0) {
         std::cout << "ClapTrap " << this->_name << " is out of energy points!" << std::endl;
         return ;
-    } else if (this->_hitPoints <= 0) {
+    } else if ((int)this->_hitPoints <= 0) {
         std::cout << "ClapTrap " << this->_name << " is dead and can't take more damage" << std::endl;
         return ;
     }
