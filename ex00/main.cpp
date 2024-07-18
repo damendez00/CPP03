@@ -6,7 +6,7 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 14:15:03 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/18 16:14:55 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/18 17:17:12 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int main(void)
     ClapTrap b( a );
     ClapTrap c("C");
     c = a;
+    
     std::cout << "" << std::endl;
     a.attack("Deer");
     a.takeDamage(1);
@@ -33,5 +34,6 @@ int main(void)
     c.takeDamage(3);
     c.beRepaired(3);
 
+    std::cout << "" << std::endl;
     return 0;
 }

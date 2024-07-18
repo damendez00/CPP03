@@ -6,15 +6,15 @@
 #    By: damendez <damendez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/16 17:24:07 by damendez          #+#    #+#              #
-#    Updated: 2024/07/18 14:55:44 by damendez         ###   ########.fr        #
+#    Updated: 2024/07/18 16:20:08 by damendez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= ScavTrap
 
-SRC_FILES	= ScavTrap.cpp main.cpp
+SRC_FILES	= ClapTrap.cpp ScavTrap.cpp main.cpp
 
-HEADER		= ScavTrap.hpp
+HEADER		= ClapTrap.cpp ScavTrap.hpp
 
 OBJ_DIR		= obj/
 OBJ_FILES	= $(SRC_FILES:.cpp=.o)

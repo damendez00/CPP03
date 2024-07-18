@@ -6,15 +6,15 @@
 #    By: damendez <damendez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/16 17:24:07 by damendez          #+#    #+#              #
-#    Updated: 2024/07/18 14:56:15 by damendez         ###   ########.fr        #
+#    Updated: 2024/07/18 17:34:10 by damendez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= FragTrap
 
-SRC_FILES	= FragTrap.cpp main.cpp
+SRC_FILES	= ClapTrap.cpp ScavTrap.cpp FragTrap.cpp main.cpp
 
-HEADER		= FragTrap.hpp
+HEADER		= ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
 
 OBJ_DIR		= obj/
 OBJ_FILES	= $(SRC_FILES:.cpp=.o)
