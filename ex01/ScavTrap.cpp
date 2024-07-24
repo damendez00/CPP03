@@ -6,14 +6,17 @@
 /*   By: damendez <damendez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 17:24:09 by damendez          #+#    #+#             */
-/*   Updated: 2024/07/18 17:04:37 by damendez         ###   ########.fr       */
+/*   Updated: 2024/07/24 14:35:46 by damendez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap() {
-    std::cout << "| ScavTrap | - " << this->_name << " Default constructor called" << std::endl;
+    this->_hitPoints = 100;
+    this->_energyPoints = 50;
+    this->_attackDamage = 20;
+    std::cout << "| ScavTrap | - " << " Default constructor called" << std::endl;
 }
 
 ScavTrap::ScavTrap( std::string name ) : ClapTrap(name) {

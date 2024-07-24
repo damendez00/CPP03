@@ -58,6 +58,8 @@
         "string": "cpp",
         "string_view": "cpp",
         "numbers": "cpp",
-        "ranges": "cpp"
+        "ranges": "cpp",
+        "fstream": "cpp",
+        "sstream": "cpp"
     }
 }
